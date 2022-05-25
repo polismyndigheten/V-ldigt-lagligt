@@ -78,11 +78,6 @@ nav
     #13889a 0%,
     #13889a 50%,
     #13889a 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  -moz-text-fill-color: transparent;
 }
 /*Changes the font to Roboto*/
 a
