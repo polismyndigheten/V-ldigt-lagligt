@@ -1,0 +1,175 @@
+/*Adds a margin to everything and a background color to the body*/
+* {
+    margin: 5px;
+    margin-top: 10px;
+  }
+  body
+  {
+    background-color: #2d2d2d;
+  }
+/*Changes position, adds a border and a transition so it turns into a responsive menu*/
+#LOTR
+{
+border:5px solid #13889a;
+padding: 5px;
+margin-right: -5px;
+transition: border-top-width 0.5s;
+margin-top: 15px;
+}
+#mando
+{
+  border:5px solid #13889a;
+  padding: 5px;
+  margin-left: -5px;
+  margin-right: -5px;
+  transition: border-top-width 0.5s;
+  margin-top: 15px;
+}
+#credits
+{
+
+  border:5px solid #13889a;
+  padding: 5px;
+  margin-left: -5px;
+  transition: border-top-width 0.5s;
+  text-align: center;
+  margin-top: 15px;
+}
+/*Extends the border with a transition a bit so it's easier for the user to see what they are selecting*/
+#credits:hover
+{
+  border-top-width: 10px;
+}
+#mando:hover
+{
+  border-top-width: 10px;
+}
+#LOTR:hover
+{
+  border-top-width: 10px;
+}
+/*When you are hovering over a link it's selected with a grey background*/
+a:hover
+{
+ background-color: grey;
+}
+/*Removes link decoration and makes the interface look clean*/
+nav a
+{
+  padding:10px 15px;
+  background-color:#0a004b;
+  color: #15a173;
+  margin-top:30px;
+  
+  border: 5px black solid;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav
+{
+  margin-left: 41.7%;
+}
+/*Changes position, font and color of the clock*/
+#clock {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-family: 'Orbitron', sans-serif;
+  background-image: linear-gradient(180deg,
+    #13889a 0%,
+    #13889a 50%,
+    #13889a 100%);
+}
+/*Changes the font to Roboto*/
+a
+{
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/*Changes the text to a lengthier one when you hover over*/
+#LOTR:hover:before
+{
+  content: "Draktränaren";
+}
+
+#mando:hover:before
+{
+  content: "Mandalorian";
+}
+/*When you are hovering over drak or mando the text is hidden so it doesn't say "drakdraktränaren"*/
+#LOTR:hover span
+{
+  display: none;
+}
+#mando:hover span
+{
+  display: none;
+}
+/*Puts a border around the video*/
+.ytvideo
+{
+  margin-top: 50px;
+border-bottom: 5px solid #13889a;
+border-top: 5px solid #13889a;
+border-left: 5px solid #0a004b;
+border-right: 5px solid #0a004b;
+}
+/*Changes the size of tandlöse and puts a border around him*/
+#Tandlöse
+{
+  width: 560px;
+  height: auto;
+border-bottom: 5px solid #13889a;
+border-top: 5px solid #13889a;
+border-left: 5px solid #0a004b;
+border-right: 5px solid #0a004b;
+}
+/*Changes where the pointingguy is positioned and adds a transition*/
+#PointingGuy
+{
+  width: 120px;
+  position: absolute;
+  left: 0px;
+  top: -56px;
+  transition: transform 0.5s;
+
+  transition-timing-function: ease-in-out;
+}
+#PointingGuy:hover
+{
+transform: rotate(360deg);
+}
+/*Adds a border, width, background color and changes the position*/
+p
+{
+  border-top:5px solid #13889a;
+  border-bottom:5px solid #13889a;
+  border-left: 5px solid #0a004b;
+  border-right: 5px solid #0a004b;
+  width: 170px;
+  background-color: #5B7F8B;
+  left: 1050px;
+  bottom:747px;
+  position: relative;
+}
+/*Changes the foot color to white*/
+footer
+{
+  color: white;
+}
+/*When the height of the screens value is higher than the base of the screen it reorients multiple elements to make it easier to see*/
+@media only screen and (orientation: Portrait) {
+  p {
+    left: 0%;
+    bottom:17.5px;
+  }
+  /*Changes "till vänster" to "Ovanför" because it's above and not to the left anymore*/
+  p:before
+  {
+    content:"Den här sidan handlar om draktränaren. Draktränaren är en film där det är en kille som är en viking och hans släkt dödar drakar. Men han tycker inte om att döda drakar så han försöker tämja en drake. Han lyckades rida på draken och låten som spelas då är den låten som är ovanför om sidan. Där kan man också se en bild på draken han flög." ;
+  }
+  /*Remove the old text*/
+  .textchange
+  {
+    display: none;
+  }
+}
