@@ -24,11 +24,6 @@ border: 2px black solid;
     #ffc57d 0%,
     #ffa12e 50%,
     #ff8c00 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  -moz-text-fill-color: transparent;
 }
 /*Changes position, adds a border and a transition so it turns into a responsive menu*/
 #LOTR
